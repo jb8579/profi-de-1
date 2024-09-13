@@ -1,0 +1,469 @@
+<?php
+define('REDTRACK_CAMPAIGN_ID', '666f18506ef187000144b3ff');
+
+if (isset($_SERVER['HTTP_REFERER'])) {
+        $referer = $_SERVER['HTTP_REFERER'];
+        setcookie("referer", $referer, time() + (60 * 60 * 24 * 30), "/");
+}else{
+        setcookie("referer", '', time() + (60 * 60 * 24 * 30), "/");
+}
+
+if (isset($_SERVER["QUERY_STRING"])) {
+        $q = $_SERVER["QUERY_STRING"];
+        setcookie("q", $q, time() + (60 * 60 * 24 * 30), "/");
+}else{
+         setcookie("q", '', time() + (60 * 60 * 24 * 30), "/");
+}
+
+
+?>
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Deutschlands Top Online Spielotheken 2024</title>
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        <link rel="stylesheet" id="bootstrap-defer-css" href="./css/bootstrap.min.css" media="all">
+        <link rel="stylesheet" id="bootstrap-icons-defer-css" href="./css/bootstrap-icons.css" media="all">
+        <link rel="stylesheet" id="slick-defer-css" href="./css/slick.css" media="all">
+        <link rel="stylesheet" id="main-defer-css" href="./css/main.min.css" media="all">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <meta name="msapplication-TileColor" content="#13161f">
+        <meta name="theme-color" content="#13161f">
+
+        <script async src="https://trk.proficasino.com/track.js?rtkcmpid=<?= REDTRACK_CAMPAIGN_ID; ?>"></script>
+
+        <script>
+            const handleRedtrack = async () => {                                                                                    
+                const links = Array.from(document.querySelectorAll('a[href*="clickid="]'));                                           
+                if (!links.length) {                                                                                                  
+                await new Promise(r => setTimeout(r, 200));                                                                         
+                console.log('Waiting for Redtrack links to appear')                                                                 
+                await handleRedtrack();                                                                                             
+                return;                                                                                                             
+                }                                                                                                                     
+                const link = links.find(i => i.href.includes('clickid={clickid}'));                                                   
+                                                                                                                                    
+                // loop until {clickid} replaced                                                                                      
+                if (link) {                                                                                                           
+                while (link.href.includes('clickid={clickid}')) {                                                                   
+                    await new Promise(r => setTimeout(r, 50));                                                                        
+                    console.log('Waiting for Redtrack clickid to arrive')                                                             
+                }                                                                                                                   
+                }                                                                                                                     
+                                                                                                                                    
+            };                                                                                                                      
+            handleRedtrack().then();
+        </script>
+
+    </head>
+
+    <body class="home page-template-default page page-id-2 no-sidebar customize-support">
+        <div id="page" class="site">
+            <main id="primary" class="site-main">
+                <header id="masthead" class="site-header">
+                    <div class="container">
+                        <div class="d-flex justify-content-between">
+                            <div class="pe-md-5 text-white">
+                                <div class="mb-0 mb-md-3">
+                                    <h1><strong>Deutschlands Top <span style="color: #21d71b;">Online Casinos 2024 </span></strong></h1></div>
+                                <div class="mb-0 d-none d-md-block">
+                                    <p>Top Willkommensangebot für Deutsche Neukunden für 2024. Alle gelisteten Anbieter besitzen eine gütlige Deutsche Lizenz.</p>
+                                </div>
+                            </div>
+                            <div class="d-none d-lg-block">
+                                <div class="d-flex flex-column h-100">
+                                    <div class="icons d-flex gap-3">
+
+                                        <div class="icon rounded-2 py-3 px-2 d-flex flex-column align-items-center justify-content-center flex-fill">
+                                            <div class="icon-wrapper rounded-circle mb-2"><img src="./images/bonus.png" loading="lazy" class="webpexpress-processed"></div>
+                                            <p class="mb-0">Top Angebote</p>
+                                        </div>
+
+                                        <div class="icon rounded-2 py-3 px-2 d-flex flex-column align-items-center justify-content-center flex-fill">
+                                            <div class="icon-wrapper rounded-circle mb-2"><img src="./images/safe.png" loading="lazy" class="webpexpress-processed"></div>
+                                            <p class="mb-0">Lizensiert & Legal</p>
+                                        </div>
+
+                                        <div class="icon rounded-2 py-3 px-2 d-flex flex-column align-items-center justify-content-center flex-fill">
+                                            <div class="icon-wrapper rounded-circle mb-2"><img src="./images/247.png" loading="lazy" class="webpexpress-processed"></div>
+                                            <p class="mb-0">24/7 Verfügbar</p>
+                                        </div>
+
+                                        <div class="icon rounded-2 py-3 px-2 d-flex flex-column align-items-center justify-content-center flex-fill">
+                                            <div class="icon-wrapper rounded-circle mb-2"><img src="./images/card(1).png" loading="lazy"></div>
+                                            <p class="mb-0">Schnelle Auszahlung</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+                <article id="post-2" class="container post-2 page type-page status-publish hentry">
+                    <div class="list-main rounded-2 toplist-name" data-id="379" data-toplist-name="Sport Main">
+                        <div class="d-none d-md-block p-2 py-md-1 px-md-4 rounded-2 list-title mb-2">
+                            <div class="row">
+                                <div class="col-5">
+                                    <div class="d-flex align-items-center gap-xl-5">
+                                        <div class="flex-fill text-center brand-name mx-auto">Spielothek</div>
+                                        <div class="flex-fill ms-md-auto text-center">Neukundenangebot</div>
+                                    </div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="text-center">Bewertung</div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="text-center">Punktzahl</div>
+                                </div>
+                                <div class="col-2">
+                                    <div class="text-center">Jetzt Spielen</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list-item px-2 py-3 px-md-4 rounded-2 mt-md-2 ">
+                            <div class="row align-items-center position-relative">
+                                <div class="col-12 col-sm-5">
+                                    <div class="d-flex align-items-center gap-3 gap-xl-5">
+                                        <div class="item-logo brand-logo">
+                                           <img src="./images/euspielo.png" alt="" loading="lazy" title="slots" width="155" height="85" class="rounded-2">
+                                        </div>
+                                        <div class="item-bonus text-center mx-auto /ms-md-auto">
+                                            <p class="bon-txt mb-0 mt-2"><span style="color: #d9fcd1; font-weight: 500; font-size: 17px;">100% </span> bis zu <span style="color: #ff4e00; font-weight: 500; font-size: 17px;">1.000€</span>
+                                                <br>+200 Freispiele</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-rat col-6 col-sm-2 text-center">
+                                    <div class="d-flex align-items-center justify-content-around d-md-block py-2 py-md-0">
+                                        <div class="">
+                                            <p class="ratettl mb-0">Votes (9,759)</p>
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                        </div>
+                                        <div class="">
+                                            <div class="item-sco col-6 col-sm-2 text-center d-md-none">9.9</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-sco col-6 col-sm-3 text-center d-none d-md-block">9.9 </div>
+                                <div class="item-play col-6 col-sm-2 text-center">
+                                    <div class="py-2 py-md-0">
+                                        <a class="btn btn-primary rounded-2 stretched-link afflink" href="outbound/1?clickid={clickid}" rel="nofollow" target="_blank">Bonus Holen*</a>
+                                        <p class="getlink mb-0 d-none d-sm-block"><a href="outbound/1?clickid={clickid}" rel="nofollow" target="_blank">EU Spielothek Besuchen &gt;</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-white-50 notes small mb-0 position-relative"><b>EU Spielothek</b> | +18 | AGB gelten</p>
+                        </div>
+
+
+                        <div class="list-item px-2 py-3 px-md-4 rounded-2 mt-md-2 ">
+                            <div class="row align-items-center position-relative">
+                                <div class="col-12 col-sm-5">
+                                    <div class="d-flex align-items-center gap-3 gap-xl-5">
+                                        <div class="item-logo brand-logo">
+                                            <img src="./images/winfestspielo.png" alt="" loading="lazy" title="slots" width="155" height="85" class="rounded-2">
+                                        </div>
+                                        <div class="item-bonus text-center mx-auto /ms-md-auto">
+                                            <p class="bon-txt mb-0 mt-2"><span style="color: #d9fcd1; font-weight: 500; font-size: 17px;">100%</span> bis zu <span style="color: #ff4e00; font-weight: 500; font-size: 17px;">500€</span> Bonus
+                                                <br> +200 Freispiele </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-rat col-6 col-sm-2 text-center">
+                                    <div class="d-flex align-items-center justify-content-around d-md-block py-2 py-md-0">
+                                        <div class="">
+                                            <p class="ratettl mb-0">Votes (8,564)</p>
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                        </div>
+                                        <div class="">
+                                            <div class="item-sco col-6 col-sm-2 text-center d-md-none">9.8</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-sco col-6 col-sm-3 text-center d-none d-md-block">9.8</div>
+                                <div class="item-play col-6 col-sm-2 text-center">
+                                    <div class="py-2 py-md-0">
+                                        <a class="btn btn-primary rounded-2 stretched-link afflink" href="outbound/2?clickid={clickid}" rel="nofollow" target="_blank">Bonus Holen*</a>
+                                        <p class="getlink mb-0 d-none d-sm-block"><a href="outbound/2?clickid={clickid}" rel="nofollow" target="_blank">Winfest Besuchen &gt;</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-white-50 notes small mb-0 position-relative"><b>Winfest</b> | +18 | AGB gelten</p>
+                        </div>
+
+
+                        <div class="list-item px-2 py-3 px-md-4 rounded-2 mt-md-2 ">
+                            <div class="row align-items-center position-relative">
+                                <div class="col-12 col-sm-5">
+                                    <div class="d-flex align-items-center gap-3 gap-xl-5">
+                                        <div class="item-logo brand-logo">
+                                            <img src="./images/spinzspielo.png" alt="" loading="lazy" title="slots" width="155" height="85" class="rounded-2">
+                                        </div>
+                                        <div class="item-bonus text-center mx-auto /ms-md-auto">
+                                            <p class="bon-txt mb-0 mt-2"><span style="color: #d9fcd1; font-weight: 500; font-size: 17px;">100%</span> bis zu <span style="color: #ff4e00; font-weight: 500; font-size: 17px;">500€</span>
+                                                <br> +150 Freispiele</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-rat col-6 col-sm-2 text-center">
+                                    <div class="d-flex align-items-center justify-content-around d-md-block py-2 py-md-0">
+                                        <div class="">
+                                            <p class="ratettl mb-0">Votes (8,564)</p>
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                        </div>
+                                        <div class="">
+                                            <div class="item-sco col-6 col-sm-2 text-center d-md-none">9.6</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-sco col-6 col-sm-3 text-center d-none d-md-block">9.6</div>
+                                <div class="item-play col-6 col-sm-2 text-center">
+                                    <div class="py-2 py-md-0">
+                                        <a class="btn btn-primary rounded-2 stretched-link afflink" href="outbound/3?clickid={clickid}" rel="nofollow" target="_blank">Bonus Holen*</a>
+                                        <p class="getlink mb-0 d-none d-sm-block"><a href="outbound/3?clickid={clickid}" rel="nofollow" target="_blank">Spinz Besuchen &gt;</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-white-50 notes small mb-0 position-relative"><b>Spinz</b> | +18 | AGB gelten</p>
+                        </div>
+
+
+                        <div class="list-item px-2 py-3 px-md-4 rounded-2 mt-md-2 ">
+                            <div class="row align-items-center position-relative">
+                                <div class="col-12 col-sm-5">
+                                    <div class="d-flex align-items-center gap-3 gap-xl-5">
+                                        <div class="item-logo brand-logo">
+                                            <img src="./images/betanospielo.png" alt="" loading="lazy" title="slots" width="155" height="85" class="rounded-2">
+                                        </div>
+                                        <div class="item-bonus text-center mx-auto /ms-md-auto">
+                                            <p class="bon-txt mb-0 mt-2"><span style="color: #d9fcd1; font-weight: 500; font-size: 17px;">100%</span> bis zu <span style="color: #ff4e00; font-weight: 500; font-size: 17px;">400€</span>
+                                                <br>  +100 Freispiele</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-rat col-6 col-sm-2 text-center">
+                                    <div class="d-flex align-items-center justify-content-around d-md-block py-2 py-md-0">
+                                        <div class="">
+                                            <p class="ratettl mb-0">Votes (6,553)</p>
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                        </div>
+                                        <div class="">
+                                            <div class="item-sco col-6 col-sm-2 text-center d-md-none">9.4</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-sco col-6 col-sm-3 text-center d-none d-md-block">9.4</div>
+                                <div class="item-play col-6 col-sm-2 text-center">
+                                    <div class="py-2 py-md-0">
+                                        <a class="btn btn-primary rounded-2 stretched-link afflink" href="outbound/4?clickid={clickid}" rel="nofollow" target="_blank">Bonus Holen*</a>
+                                        <p class="getlink mb-0 d-none d-sm-block"><a href="outbound/4?clickid={clickid}" rel="nofollow" target="_blank">Betano Besuchen &gt;</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-white-50 notes small mb-0 position-relative"><b>Betano</b> | +18 | AGB gelten</p>
+                        </div>
+
+
+                        <div class="list-item px-2 py-3 px-md-4 rounded-2 mt-md-2 ">
+                            <div class="row align-items-center position-relative">
+                                <div class="col-12 col-sm-5">
+                                    <div class="d-flex align-items-center gap-3 gap-xl-5">
+                                        <div class="item-logo brand-logo">
+                                            <img src="./images/drueckglueckspielo.png" alt="" loading="lazy" title="slots" width="155" height="85" class="rounded-2">
+                                        </div>
+                                        <div class="item-bonus text-center mx-auto /ms-md-auto">
+                                            <p class="bon-txt mb-0 mt-2"><span style="color: #d9fcd1; font-weight: 500; font-size: 17px;">100%</span> bis zu <span style="color: #ff4e00; font-weight: 500; font-size: 17px;">500€</span>
+                                                <br> +100 Freispiele</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-rat col-6 col-sm-2 text-center">
+                                    <div class="d-flex align-items-center justify-content-around d-md-block py-2 py-md-0">
+                                        <div class="">
+                                            <p class="ratettl mb-0">Votes (5,112)</p>
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                        </div>
+                                        <div class="">
+                                            <div class="item-sco col-6 col-sm-2 text-center d-md-none">9.2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-sco col-6 col-sm-3 text-center d-none d-md-block">9.2</div>
+                                <div class="item-play col-6 col-sm-2 text-center">
+                                    <div class="py-2 py-md-0">
+                                        <a class="btn btn-primary rounded-2 stretched-link afflink" href="outbound/5?clickid={clickid}" rel="nofollow" target="_blank">Bonus Holen*</a>
+                                        <p class="getlink mb-0 d-none d-sm-block"><a href="outbound/5?clickid={clickid}" rel="nofollow" target="_blank">Drückglück Besuchen &gt;</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-white-50 notes small mb-0 position-relative"><b>Drückglück</b> | +18 | AGB gelten</p>
+                        </div>
+
+                        <div class="list-item px-2 py-3 px-md-4 rounded-2 mt-md-2 ">
+                            <div class="row align-items-center position-relative">
+                                <div class="col-12 col-sm-5">
+                                    <div class="d-flex align-items-center gap-3 gap-xl-5">
+                                        <div class="item-logo brand-logo">
+                                            <img src="./images/jackpotspielo.png" alt="" loading="lazy" title="slots" width="155" height="85" class="rounded-2">
+                                        </div>
+                                        <div class="item-bonus text-center mx-auto /ms-md-auto">
+                                            <p class="bon-txt mb-0 mt-2"><span style="color: #d9fcd1; font-weight: 500; font-size: 17px;">100%</span> bis zu <span style="color: #ff4e00; font-weight: 500; font-size: 17px;">500€</span>
+                                                <br> +100 Freispiele</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-rat col-6 col-sm-2 text-center">
+                                    <div class="d-flex align-items-center justify-content-around d-md-block py-2 py-md-0">
+                                        <div class="">
+                                            <p class="ratettl mb-0">Votes (5,112)</p>
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                            <img class="star" src="./images/star.png" width="15" height="14" loading="lazy">
+                                        </div>
+                                        <div class="">
+                                            <div class="item-sco col-6 col-sm-2 text-center d-md-none">9.2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item-sco col-6 col-sm-3 text-center d-none d-md-block">9.2</div>
+                                <div class="item-play col-6 col-sm-2 text-center">
+                                    <div class="py-2 py-md-0">
+                                        <a class="btn btn-primary rounded-2 stretched-link afflink" href="outbound/6?clickid={clickid}" rel="nofollow" target="_blank">Bonus Holen*</a>
+                                        <p class="getlink mb-0 d-none d-sm-block"><a href="outbound/6?clickid={clickid}" rel="nofollow" target="_blank">Jackpotpiraten Besuchen &gt;</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-white-50 notes small mb-0 position-relative"><b>Jackpotpiraten</b> | +18 | AGB gelten</p>
+                        </div>
+
+
+                </article>
+
+            </main>
+
+            <footer class="mt-5 py-3">
+                <div class="container">
+                    <div class="footer-txt text-white-50">
+
+
+                        <h2>Ist das Spielen im Online Casino legal in Deutschland?</h2>
+                        <p>Für Online Casinos Deutschland greift aktuell ab Juli 2022 der Glücksspielstaatsvertrag. Folglich ist das Glücksspiel hierzulande in einem Online Casino legal und sicherer denn je. Wir erklären, was sich ab Juli 2022 geändert hat
+                            und stellen euch in unserem Vergleich hier alle Anbieter vor, die sich für eine deutsche Lizenz qualifiziert haben und sich stolz mit dem Titel „Online Casino Deutschland legal“ ihren Kunden präsentieren dürfen.</p>
+
+                        <p>Um genau zu sein, hat sich zum 01.07.2022 in Deutschland in Sachen legale Online Casinos jede Menge zum Schutz der Spieler verändert: Ein neue Ära für das Online Casino in Deutschland steht in den Startlöchern. Und tritt seit dem
+                            01 Juli 2022 in Kraft. Viele seriöse Online Casinos unter anderem JackpotPiraten (zählt zu den neuen Online Casinos in Deutschland) haben sich bereits um die Lizenzierung bemüht und erhalten. Das bedeutet es gibt zum ersten
+                            Mal nach deutschem Recht legale Online Casinos in Deutschland.</p>
+
+                        <h2>Deutsche Online Spielotheken im Test</h2>
+                        <p>
+                            <ul>
+                                <li>Willkommensangebot des Anbieters</li>
+                                <li>Pro und Cons des Anbieter</li>
+                                <li>Benutzerfreundlichkeit</li>
+                                <li>Ersteinzahlung und Bonus</li>
+                                <li>Fazit</li>
+                            </ul>
+                        </p>
+
+                        <p>Neben diesen wichtigen Themen geht dieser Test aber noch auf andere Themen ein. So werden wir die Ein- und Auszahlungsmethoden bei den jeweiligen Spielothek wie etwa PaysafeCard, PayPal, Neteller oder bei denen man per Telefonrechnung
+                            zahlen kann beziehungsweise Kreditkarten und Lastschrift Spiele testen. Dazu geht der Test auf die Sicherheit beim Onlineglücksspiel mit Echtgeld ein und auf Spielos ohne Download, Spielotheken ohne Anmeldung sowie die Besteuerung
+                            in den Spielotheken und die Vorzüge der Handy Spielotheken beziehungsweise Freispielen, Tablets und iOS Programmen.
+                        </p>
+
+                        <h2>Kundendienst</h2>
+                        <p>Des Weiteren ist im Test und für einen Spieler auch die Zuverlässigkeit des Kundenservices wichtig. Der Kundenservice sollte immer eine gewisse Qualität mitbringen, da es schließlich um Geld geht und man bei Fragen diesbezüglich
+                            nicht allein gelassen werden will. Von daher liegt es uns bei diesem Artikel zum Online Spielo Test am Herzen solide Information zu präsentieren, sodass Sie wissen, wo Sie an der richtigen Adresse sind, wenn es zum Beispiel
+                            um das Vergnügen mit Sportwettenanbieter mit Bonus geht und wo sich generell ein Test lohnen kann.</p>
+
+                        <h2>Legalität + Sicherheit</h2>
+                        <p>All getesteten Spielothek besitzen eine gültige Deutsch Lizenz und liegen unter striken gesetzlichen Regulierungen. Das Spiel für Deutsch Spieler ist als 100% Sicher eingestuft</p>
+
+                    </div>
+
+                    <hr class="px-5 px-md-0">
+
+                    <div class="footer-content">
+
+                        <div class="myDiv">
+
+                            <p>Disclaimer: Glückspiel kann süchtig machen, beatchen Sie Ihr Spielverhalten. Erhalten Sie mehr Info unter <a href="https://gluecksfall.com/">gluecksfall.</a></p>
+
+                            <p> Rechtlicher Hinweis: Alle Anbieter auf dieser Website sind legal und besitzen eine gültige Lizenz durch die Gemeinsame Glücksspielbehörde der Länder. Siehe <a href="https://www.gluecksspiel-behoerde.de/de/erlaubnisfaehigesgluecksspiel/whitelist">White List</a>                                Voraussetzung für die Nutzung unserer Website ist die Vollendung des 18. Lebensjahres sowie die Beachtung der für den jeweiligen Nutzer geltenden Glücksspielgesetze Weitere Informationen zur Lizensierung, Spielerschutz
+                                und Suchthilfe finden sie auf der Website der GGL Glücksspiel kann süchtig machen. Hilfe finden Sie auf bei der <a href="https://www.bzga.de/">BZgA</a> </p>
+
+                            <p>*Werbehinweis - Wir erhalten eine Provision von den hier angeführten Spielotheken. 18+ | AGB gelten </p>
+
+                        </div>
+
+                        <div class="footer-logo d-flex flex-wrap align-items-center justify-content-around gap-3 gap-md-4 my-md-5 py-4">
+
+                            <img class="footer-ico" src="./images/18.png" loading="lazy">
+
+                            <a href="https://www.gamcare.org.uk/" target="_blank" rel="nofollow"><img class="footer-ico" src="./images/gamcare.png" loading="lazy"></a>
+                            <a href="https://www.begambleaware.org/" target="_blank" rel="nofollow"><img class="footer-ico" src="./images/BeGambleAware.png" loading="lazy"></a>
+                            <a href="https://gluecksfall.com/" target="_blank" rel="nofollow"><img class="footer-ico" src="./images/gluecksfall.png" loading="lazy"></a>
+                            <img class="footer-ico" src="./images/gluckspiel2.jpg" loading="lazy">
+                            <a href="https://www.bzga.de/" target="_blank" rel="nofollow"><img class="footer-ico" src="./images/bzga.jpg.webp" loading="lazy"></a>
+
+                            <!--<a href="#" target="_blank" rel="nofollow"><img class="footer-ico" src="./images/qmra.svg" loading="lazy"> </a>
+                    <a href="#" target="_blank" rel="nofollow"><img class="footer-ico" src="./images/GamblingTherapy.png" loading="lazy"></a>
+                <a href="#" target="_blank" rel="nofollow"><img class="footer-ico" src="./images/gamstop.png" loading="lazy"></a>
+                <a href="#" target="_blank" rel="nofollow"><img class="footer-ico" src="./images/raig.png" loading="lazy"></a> -->
+                        </div>
+
+
+                        <div class="copyright">Copyright © 2023 - Website is owned by North Play Media <a href="index.php">casinoprofi</a> | <a href="cookie.html">Cookies</a> | <a href="privacy.html">Datenschutz</a> | <a href="/kontakt/index.php">Kontakt</a></div>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!--<script src="./js/popper.min.js.download" id="popper-defer-js"></script>
+            <script src="./js/bootstrap.min.js.download" id="bootstrap-defer-js"></script>
+            <script type="text/javascript" src="./js/jquery-3.6.0.min.js.download"></script>
+            <script>
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const keyword = urlParams.get('keyword');
+            if (queryString != "undefined" && keyword != "") {
+            (function ($) {
+                $(document).ready(function () {
+                $( ".afflink" ).each(function() {
+                    var url = $(this).attr('href')
+                    url = url.replace('{{keyword}}', keyword)
+                    $(this).attr('href', url)
+                });
+                });
+            })(jQuery);
+            }
+        </script> -->
+
+    </body>
+
+</html>
